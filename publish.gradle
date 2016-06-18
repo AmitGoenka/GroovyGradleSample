@@ -1,0 +1,17 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath: 'org.ajoberstar:gradle-git:1.1.0'
+	}
+}
+
+apply plugin: 'org.ajoberstar.github-pages'
+
+github-pages {
+	repoUrl = 'git@github.com:https://github.com/AmitGoenka/GrrovyGradleSample.git'
+	pages {
+		from(file('build/resources/main/public/html5'))
+	}
+}

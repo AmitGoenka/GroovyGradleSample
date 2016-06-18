@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-06-18T18:38:11" hostname="agoenkamnlt" time="0.004">
+  <properties/>
+  <testcase name="someLibraryMethod returns true" classname="LibraryTest" time="0.004"/>
+  <system-out><![CDATA[Hey I am in a new line in Library Groovy File
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

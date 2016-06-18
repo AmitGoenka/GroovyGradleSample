@@ -1,0 +1,164 @@
+<html><head><title>CodeNarc Report</title><style type='text/css'>body {
+    font-family: Arial, sans-serif;
+    margin: 20px 20px 20px 30px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    width: 400px;
+    text-align: center;
+
+    color: white;
+    background-color: #557799;
+    padding: 10px;
+
+    -moz-box-shadow: 3px 3px 4px #AAA;
+    -webkit-box-shadow: 3px 3px 4px #AAA;
+    box-shadow: 3px 3px 4px #AAA;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+    font-size: 150%;
+    margin-top: 40px;
+    padding-top: 5px;
+    border-top: 5px solid lightgray;
+}
+
+h3 {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: underline;
+    color: #D93544;
+}
+
+.logo {
+    float: right;
+}
+
+.metadata {
+}
+
+.summary {
+    margin-bottom: 20px;
+}
+
+.reportInfo {
+    font-size: 110%;
+}
+
+.allPackages {
+    font-weight: bold;
+}
+
+.fileHeader {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.tableHeader {
+    font-weight: bold;
+}
+
+.number {
+    text-align: center;
+}
+
+.priority1, .priority2, .priority3, .priority4 {
+    font-weight: bold;
+    text-align: center;
+    color: #990000;
+}
+
+.priority1 {
+    background-color: #FFAAAA;
+}
+
+.priority2 {
+    background-color: #FFCCAA;
+}
+
+.priority3 {
+    background-color: #FFEEAA;
+}
+
+.ruleName {
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+.violationInfo {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.violationInfoPrefix {
+    font-size: 60%;
+    width: 30px;
+    color: #a9a9a9;
+    padding-right: 4px;
+}
+
+.sourceCode {
+    font-family: Arial, sans-serif;
+    font-size: 80%;
+    color: #444444;
+}
+
+.violationMessage {
+    font-style: italic;
+    font-size: 80%;
+    color: black;
+}
+
+.ruleDescriptions {
+    font-size: 85%;
+}
+
+.version {
+    margin-top: 1px;
+}
+
+.buttons button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    border: 2px solid gray;
+    border-collapse: collapse;
+
+    -moz-box-shadow: 3px 3px 4px #AAA;
+    -webkit-box-shadow: 3px 3px 4px #AAA;
+    box-shadow: 3px 3px 4px #AAA;
+}
+
+td, th {
+    border: 1px solid #D3D3D3;
+    padding: 4px 15px 4px 15px;
+    margin: 20px 15px 20px 15px;
+}
+
+th {
+    text-shadow: 2px 2px 2px white;
+}
+
+th {
+    border-bottom: 1px solid gray;
+    background-color: #DDDDFF;
+}
+
+em, .em {
+    font-weight: bold;
+}</style></head><body><img class='logo' src='http://codenarc.sourceforge.net/images/codenarc-logo.png' alt='CodeNarc' align='right'/><h1>CodeNarc Report</h1><div class='metadata'><table><tr><td class='em'>Report title:</td><td/></tr><tr><td class='em'>Date:</td><td>Jun 18, 2016 1:38:09 PM</td></tr><tr><td class='em'>Generated with:</td><td><a href='http://www.codenarc.org'>CodeNarc v0.24.1</a></td></tr></table></div><div class='summary'><h2>Summary</h2><table><tr class='tableHeader'><th>Package</th><th>Total Files</th><th>Files with Violations</th><th>Priority 1</th><th>Priority 2</th><th>Priority 3</th></tr><tr><td class='allPackages'>All Packages</td><td class='number'>2</td><td class='number'>-</td><td class='priority1'>-</td><td class='priority2'>-</td><td class='priority3'>-</td></tr><tr><td>&lt;Root&gt;</td><td class='number'>2</td><td class='number'>-</td><td class='priority1'>-</td><td class='priority2'>-</td><td class='priority3'>-</td></tr></table></div><div class='summary'><h2>Rule Descriptions</h2><table border='1'><tr class='tableHeader'><th class='ruleDescriptions'>#</th><th class='ruleDescriptions'>Rule Name</th><th class='ruleDescriptions'>Description</th></tr><tr class='ruleDescriptions'><td><a name='AbstractClassName'></a><span class='ruleIndex'>1</span></td><td class='ruleName priority2'>AbstractClassName</td><td>Verifies that the name of an abstract class matches a regular expression specified in the <em>regex</em> property. If that property is null or empty, then this rule is not applied (i.e., it does nothing). It defaults to null, so this rule must be explicitly configured to be active. This rule ignores interfaces.</td></tr><tr class='ruleDescriptions'><td><a name='ClassName'></a><span class='ruleIndex'>2</span></td><td class='ruleName priority2'>ClassName</td><td>Verifies that the name of a class matches a regular expression. By default it checks that the class name starts with an uppercase letter and is followed by zero or more word characters (letters, numbers or underscores). The <em>regex</em> property specifies the regular expression used to validate the class name.</td></tr><tr class='ruleDescriptions'><td><a name='ClassNameSameAsFilename'></a><span class='ruleIndex'>3</span></td><td class='ruleName priority2'>ClassNameSameAsFilename</td><td>Reports files containing only one top level class / enum / interface which is named differently than the file.</td></tr><tr class='ruleDescriptions'><td><a name='DuplicateImport'></a><span class='ruleIndex'>4</span></td><td class='ruleName priority3'>DuplicateImport</td><td>Duplicate import statements are unnecessary.</td></tr><tr class='ruleDescriptions'><td><a name='ElseBlockBraces'></a><span class='ruleIndex'>5</span></td><td class='ruleName priority2'>ElseBlockBraces</td><td>Use braces for <em>else</em> blocks, even for a single statement. By default, braces are not required for an <em>else</em> if it is followed immediately by an <em>if</em>. Set the <em>bracesRequiredForElseIf</em> property to true to require braces is that situation as well.</td></tr><tr class='ruleDescriptions'><td><a name='FieldName'></a><span class='ruleIndex'>6</span></td><td class='ruleName priority2'>FieldName</td><td>Verifies that the name of each field matches a regular expression. By default it checks that non-'final' field names start with a lowercase letter and contains only letters or numbers, and 'final' field names start with an uppercase letter and contain only uppercase letters, numbers and underscores. The <em>regex</em> property specifies the default regular expression used to validate field names. The <em>finalRegex</em> property specifies the regular expression to validate 'final' field names. The <em>staticRegex</em> property specifies the regular expression to validate 'static' field names. The <em>staticFinalRegex</em> property specifies the regular expression to validate 'static final' field names.  The <em>ignoreFieldNames</em> property (serialVersionUID)can specify field names that should be ignored, optionally containing wildcard characters ('*' or '?').</td></tr><tr class='ruleDescriptions'><td><a name='ForStatementBraces'></a><span class='ruleIndex'>7</span></td><td class='ruleName priority2'>ForStatementBraces</td><td>Use braces for <em>for</em> statements, even for a single statement.</td></tr><tr class='ruleDescriptions'><td><a name='IfStatementBraces'></a><span class='ruleIndex'>8</span></td><td class='ruleName priority2'>IfStatementBraces</td><td>Use braces for <em>if</em> statements, even for a single statement.</td></tr><tr class='ruleDescriptions'><td><a name='ImportFromSamePackage'></a><span class='ruleIndex'>9</span></td><td class='ruleName priority3'>ImportFromSamePackage</td><td>An import of a class that is within the same package is unnecessary.</td></tr><tr class='ruleDescriptions'><td><a name='InterfaceName'></a><span class='ruleIndex'>10</span></td><td class='ruleName priority2'>InterfaceName</td><td>Verifies that the name of an interface matches a regular expression specified in the <em>regex</em> property. If that property is null or empty, then this rule is not applied (i.e., it does nothing). It defaults to null, so this rule must be explicitly configured to be active.</td></tr><tr class='ruleDescriptions'><td><a name='InterfaceNameSameAsSuperInterface'></a><span class='ruleIndex'>11</span></td><td class='ruleName priority2'>InterfaceNameSameAsSuperInterface</td><td>Checks for any interface that has an identical name to its super-interface, other than the package. This can be very confusing.</td></tr><tr class='ruleDescriptions'><td><a name='MethodName'></a><span class='ruleIndex'>12</span></td><td class='ruleName priority2'>MethodName</td><td>Verifies that the name of each method matches a regular expression. By default it checks that the method name starts with a lowercase letter. The <em>regex</em> property specifies the regular expression to check the method name against.  The <em>ignoreMethodNames</em> property (null) can specify method names that should be ignored, optionally containing wildcard characters ('*' or '?').</td></tr><tr class='ruleDescriptions'><td><a name='ObjectOverrideMisspelledMethodName'></a><span class='ruleIndex'>13</span></td><td class='ruleName priority2'>ObjectOverrideMisspelledMethodName</td><td>Verifies that the names of the most commonly overridden methods of Object: <em>equals</em>, <em>hashCode</em> and <em>toString</em>, are correct.</td></tr><tr class='ruleDescriptions'><td><a name='PackageName'></a><span class='ruleIndex'>14</span></td><td class='ruleName priority2'>PackageName</td><td>Verifies that the package name for a class matches a regular expression. By default it checks that the package name consists of only lowercase letters, separated by periods. The <em>regex</em> property specifies the regular expression used to validate the package name. The <em>packageNameRequired</em> property indicates whether a package name declaration is required for all classes.</td></tr><tr class='ruleDescriptions'><td><a name='PackageNameMatchesFilePath'></a><span class='ruleIndex'>15</span></td><td class='ruleName priority2'>PackageNameMatchesFilePath</td><td>A package source file's path should match the package itself. To find the package-relevant subpath in the file path the <em>groupId</em> <i>needs</i> to be configured. It is expected in every package declaration.</td></tr><tr class='ruleDescriptions'><td><a name='ParameterName'></a><span class='ruleIndex'>16</span></td><td class='ruleName priority2'>ParameterName</td><td>Verifies that the name of each parameter matches a regular expression. This rule applies to method parameters, constructor parameters and closure parameters. By default it checks that parameter names start with a lowercase letter and contains only letters or numbers. The <em>regex</em> property specifies the default regular expression used to validate the parameter name.  The <em>ignoreParameterNames</em> property (null) can specify parameter names that should be ignored, optionally containing wildcard characters ('*' or '?').</td></tr><tr class='ruleDescriptions'><td><a name='PropertyName'></a><span class='ruleIndex'>17</span></td><td class='ruleName priority2'>PropertyName</td><td>Verifies that the name of each property matches a regular expression. By default it checks that property names other than 'static final' start with a lowercase letter and contains only letters or numbers, and 'static final' property names start with an uppercase letter and contain only uppercase letters, numbers and underscores. The <em>regex</em> property specifies the default regular expression used to validate property names. The <em>finalRegex</em> property specifies the regular expression to validate 'final' property names. The <em>staticRegex</em> property specifies the regular expression to validate 'static' property names. The <em>staticFinalRegex</em> property specifies the regular expression to validate 'static final' property names.  The <em>ignorePropertyNames</em> property (null) can specify property names that should be ignored, optionally containing wildcard characters ('*' or '?').</td></tr><tr class='ruleDescriptions'><td><a name='UnnecessaryGroovyImport'></a><span class='ruleIndex'>18</span></td><td class='ruleName priority3'>UnnecessaryGroovyImport</td><td>A Groovy file does not need to include an import for classes from <em>java.lang</em>, <em>java.util</em>, <em>java.io</em>, <em>java.net</em>, <em>groovy.lang</em> and <em>groovy.util</em>, as well as the classes <em>java.math.BigDecimal</em> and <em>java.math.BigInteger</em>.</td></tr><tr class='ruleDescriptions'><td><a name='UnusedImport'></a><span class='ruleIndex'>19</span></td><td class='ruleName priority3'>UnusedImport</td><td>Imports for a class that is never referenced within the source file is unnecessary.</td></tr><tr class='ruleDescriptions'><td><a name='VariableName'></a><span class='ruleIndex'>20</span></td><td class='ruleName priority2'>VariableName</td><td>Verifies that the name of each method matches a regular expression. By default it checks that non-'final' variable names start with a lowercase letter and contains only letters or numbers, and 'final' variable names start with an uppercase letter and contain only uppercase letters, numbers and underscores. The <em>regex</em> property specifies the default regular expression used to validate a non-'final' variable name. The <em>finalRegex</em> property specifies the regular expression used to validate 'final' variable names. The <em>ignoreVariableNames</em> property (null) can specify variable names that should be ignored, optionally containing wildcard characters ('*' or '?').</td></tr><tr class='ruleDescriptions'><td><a name='WhileStatementBraces'></a><span class='ruleIndex'>21</span></td><td class='ruleName priority2'>WhileStatementBraces</td><td>Use braces for <em>while</em> statements, even for a single statement.</td></tr></table></div></body></html>

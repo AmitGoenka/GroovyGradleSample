@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Gr8ConferenceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-06-18T18:38:11" hostname="agoenkamnlt" time="0.061">
+  <properties/>
+  <testcase name="someAttendeeMethod" classname="Gr8ConferenceTest" time="0.061"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
